@@ -4,8 +4,7 @@ MAINTAINER Labs64 GmbH info@labs64.com
 
 # Install some must-haves
 RUN yum -y update
-RUN yum -y install vim
-RUN yum -y install wget
+RUN yum -y install vim wget
 RUN yum -y install git
 RUN git --version
 
@@ -16,17 +15,21 @@ RUN yum install yum-utils
 RUN yum-config-manager --enable remi-php71
 RUN yum -y update
 
-RUN yum install -y php-fpm \
-                   php-common \
-                   php-cli \
-                   php-curl \
-                   php-mbstring \
-                   php-mcrypt \
-                   php-xml \
-                   php-pdo \
-                   php-gd \
-                   php-mysqlnd \
-                   php-json
+RUN yum -y install php71w \
+                   php71w-fpm \
+                   php71w-common \
+                   php71w-cli \
+                   php71w-curl \
+                   php71w-mbstring \
+                   php71w-mcrypt \
+                   php71w-xml \
+                   php71w-pdo \
+                   php71w-gd \
+                   php71w-mysqlnd \
+                   php71w-pgsql \
+                   php71w-bcmath \
+                   php71w-opcache
+
 RUN php -v
 
 RUN yum clean all
