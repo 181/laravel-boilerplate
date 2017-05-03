@@ -12,7 +12,8 @@
 This is a Docker based local development environment for a [Laravel Boilerplate](https://github.com/Labs64/laravel-boilerplate) project, which provides a very flexible and extensible way of building your custom Laravel 5 applications.
 
 ## What's Inside
-TODO
+This project is based on [docker-compose](https://docs.docker.com/compose/). By default, the following containers are started: _centos7-php71, MySQL, nginx_. The `/laravel` directory is the web root which is mapped to the nginx container.
+You can directly edit configuration files from within the repo as they are mapped to the correct locations in containers.
 
 ## Minimum System Requirements
 To be able to run Laravel Boilerplate you have to meet the following requirements:
