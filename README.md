@@ -16,8 +16,8 @@ TODO
 
 ## Minimum System Requirements
 To be able to run Laravel Boilerplate you have to meet the following requirements:
-- docker
-- docker-compose
+* [docker](https://www.docker.com)
+* [docker-compose](https://docs.docker.com/compose/)
 
 ## Setup
 1. Clone repository
