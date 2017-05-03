@@ -1,0 +1,9 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - docker build -t labs64/centos7-php71 --file dockerfiles/centos7-php71/Dockerfile .
